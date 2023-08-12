@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-div">
+        <div id="progress-bar">
+            <label for="progress"></label>
+            <progress id="progress" value="0" max="100"></progress>
+        </div>
+        <div class="inner-div">
+            <h1 class="heading"></h1>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1"></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2"></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans3" id="option3"></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans4" id="option4"></label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button id="submit">SUBMIT</button>
+                <button id="next">&raquo;</button>
+            </div>
+            <p class="msg"><i class="fa fa-solid fa-exclamation"></i> Please select any option</p>
+            <div class="show-score"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/bf520e6492.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
